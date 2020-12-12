@@ -18,16 +18,15 @@ THEN the saved events persist
 var dateTime = moment().format('MMMM Do YYYY, h:mm a');
 $("#currentDay").append(dateTime);
 
-var hours{
-    9,
-    10
-    11
-    12
-    1
-    2
-    3
-    4
-    5
+var past = < dateTime;
+var present = dateTime;
+var future = >datTime;
+
+for (past) function {
+    if past 
+}
+
+
 //variables past present future
 
 
