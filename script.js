@@ -44,3 +44,21 @@ block text , change color
 
 
 */
+// Finish up and make a completed HTML timeblock
+
+// i.e
+//    <div id="hour-9" class="row time-block">
+//        <div class="col-md-1 hour">
+//          9AM
+//        </div>
+//        <textarea class="col-md-10 description"></textarea>
+//        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
+//    </div>
+
+// Use javascript to make what is written in the <textarea> appear in the console when the button is clicked
+
+// Use javascript to make what is written in the <textarea> appear in the local storage
+
+// Use javascript to pull what is in the local storage and insert it into the corresponding time block
+
+// Use javascript to color time blocks according to local time
