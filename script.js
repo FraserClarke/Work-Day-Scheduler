@@ -18,8 +18,13 @@ THEN the saved events persist
 var dateTime = moment().format('MMMM Do YYYY, h:mm a');
 $("#currentDay").append(dateTime);
 
+//color coded blocks past present future.... if datetime <.....or if datetime true/false
 
+//cannot acess block if past a certain time
 
+//when clicking time block onclick envent lister
+
+//save to local storage
 
 
 
