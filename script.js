@@ -18,6 +18,23 @@ THEN the saved events persist
 var dateTime = moment().format('MMMM Do YYYY, h:mm a');
 $("#currentDay").append(dateTime);
 
+var hours{
+    9,
+    10
+    11
+    12
+    1
+    2
+    3
+    4
+    5
+//variables past present future
+
+
+/*if hours9 >dateTime
+block text , change color
+}
+
 //color coded blocks past present future.... if datetime <.....or if datetime true/false
 
 //cannot acess block if past a certain time
@@ -27,4 +44,4 @@ $("#currentDay").append(dateTime);
 //save to local storage
 
 
-
+*/
