@@ -18,32 +18,10 @@ THEN the saved events persist
 var dateTime = moment().format('MMMM Do YYYY, h:mm a');
 $("#currentDay").append(dateTime);
 
-var past = < dateTime;
-var present = dateTime;
-var future = >datTime;
-
-for (past) function {
-    if past 
-}
 
 
-//variables past present future
 
 
-/*if hours9 >dateTime
-block text , change color
-}
-
-//color coded blocks past present future.... if datetime <.....or if datetime true/false
-
-//cannot acess block if past a certain time
-
-//when clicking time block onclick envent lister
-
-//save to local storage
-
-
-*/
 // Finish up and make a completed HTML timeblock
 
 // i.e
@@ -62,3 +40,28 @@ block text , change color
 // Use javascript to pull what is in the local storage and insert it into the corresponding time block
 
 // Use javascript to color time blocks according to local time
+
+
+/*var past = < dateTime;
+var present = dateTime;
+var future = >datTime;
+
+for (past) function {
+    if past 
+}
+/*
+
+//variables past present future
+
+
+/*if hours9 >dateTime
+block text , change color
+}
+
+//color coded blocks past present future.... if datetime <.....or if datetime true/false
+
+//cannot acess block if past a certain time
+
+//when clicking time block onclick envent lister
+
+//save to local storage*/
