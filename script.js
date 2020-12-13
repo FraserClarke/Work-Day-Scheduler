@@ -17,18 +17,18 @@ THEN the saved events persist
 $(document).ready(function (){
 
 	//create current time.
-	// var dateTime = moment().format('MMMM Do YYYY, h:mm a');
-	var dateTime = moment().hours();
-	console.log(dateTime);
-	// $("#currentDay").append(dateTime);
+	 var dateTime = moment().format('MMMM Do YYYY, h:mm a');
+	        //var dateTime = moment().hours();
+	        //console.log(dateTime);
+	$("#currentDay").append(dateTime);
 
     //Logging text from savebtn, to console, then saving to local storage.
 
 	$(".saveBtn").on("click", function(){
 		// console.log($(this));
-		var inputText = $(this).siblings(".description").val();
+		var inputText = $(this).siblings(".description").val(); //grabbing value from input
 		console.log(inputText);
-		var currentHour = $(this).parent().attr("id");
+		var currentHour = $(this).parent().attr("id"); //grabbing parent attribute
 		console.log(currentHour);
 
 		localStorage.setItem(currentHour, inputText);
