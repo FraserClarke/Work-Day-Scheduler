@@ -19,8 +19,19 @@ var dateTime = moment().format('MMMM Do YYYY, h:mm a');
 $("#currentDay").append(dateTime);
 
 
+var storage
+$("textarea").on("click", function(event){
+    
+    localStorage.setItem("storage", JSON.stringify(storage));
+    console.log();
+});
 
 
+/*$("textarea").on("click", function(event){
+event.append(console.log);
+})
+console.log();
+/*
 
 // Finish up and make a completed HTML timeblock
 
