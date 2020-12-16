@@ -43,7 +43,8 @@ $(document).ready(function (){
 		if(currentHour < newDateTime){ ///Put in function
 			String.replace('currentHour','');
 			$(".row").cssHooks(".past");
-		//textlock
+			//stringof
+			//textlock    
 		//String.replace('somevalue','') Need to turn into a number?
 		//If currentHour < Newdatetime
 			//orr function {if var past= <currentTime change css to css class .past.
