@@ -34,13 +34,34 @@ $(document).ready(function (){
 		localStorage.setItem(currentHour, inputText);
 
 
-		var past= currentHour < dateTime;
+		///how  =to create it????
+		console.log("currentHour: ", currentHour);
+		console.log("dateTime: ", dateTime);
+		var newDateTime = moment().format('h');
+		console.log("newDateTime: ", newDateTime);
+
+		if(currentHour < newDateTime){ ///Put in function
+			String.replace('currentHour','');
+			$(".row").cssHooks(".past");
+		//textlock
+		//String.replace('somevalue','') Need to turn into a number?
+		//If currentHour < Newdatetime
+			//orr function {if var past= <currentTime change css to css class .past.
+
+		}
+		
+
+
+		/*var past= currentHour < dateTime;
 		var present=currentHour === dateTime;
 		var future=currentHour>dateTime;
 
 		if past < dateTime{
 			$("#id").cssHooks(".past");
 		}
+		*/
+
+
 
 	});
 
