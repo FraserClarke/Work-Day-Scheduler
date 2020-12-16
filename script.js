@@ -40,9 +40,18 @@ $(document).ready(function (){
 		var newDateTime = moment().format('h');
 		console.log("newDateTime: ", newDateTime);
 
+		
 		if(currentHour < newDateTime){ ///Put in function
-			String.replace('currentHour','');
-			$(".row").cssHooks(".past");
+			var currentHour = Str.replace('hour-','');
+			console.log(currentHour) ;
+			
+			$(this).addClass( "past" );
+			$("inputText").append(currentHour);
+
+			// $( "" ).eq( 1 ).removeClass();
+			
+			console.log(currentHour);
+			console.log()
 			//stringof
 			//textlock    
 		//String.replace('somevalue','') Need to turn into a number?
