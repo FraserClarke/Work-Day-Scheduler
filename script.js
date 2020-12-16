@@ -26,14 +26,13 @@ $(document).ready(function (){
 	console.log(currentHour);
 	console.log(selectedHour);
 	if(currentHour > selectedHour){ ///Put in function
-			
 		console.log(currentHour) ;
-		
-		
 		$(this).addClass( "past" );
 		
 	}
-
+	if(currentHour < selectedHour){
+		$(this).addclass("future")
+	}
 })
 	//create current time.
 	// var dateTime = moment().format('MMMM Do YYYY, h:mm a');
