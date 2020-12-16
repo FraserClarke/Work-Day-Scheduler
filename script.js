@@ -33,8 +33,22 @@ $(document).ready(function (){
 
 		localStorage.setItem(currentHour, inputText);
 
+
+		var past= currentHour < dateTime;
+		var present=currentHour === dateTime;
+		var future=currentHour>dateTime;
+
+		if past < dateTime{
+			$("#id").cssHooks(".past");
+		}
+
 	});
 
+	
+	
+	
+	
+	
 	// var storage
 	// $("textarea").on("click", function(event){
 	    
