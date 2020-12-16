@@ -14,13 +14,32 @@ WHEN I refresh the page
 THEN the saved events persist
 */
 
-$(document).ready(function (){
 
+$(document).ready(function (){
+	//var dateTime = moment().format('MMMM Do YYYY, h:mm a');
+				 var currentHour = moment().hours();
+ 				//console.log(dateTime);
+	//$("#currentDay").append(dateTime);
+
+	$(".description").each(function() {
+	var selectedHour = $(this).data("hour");
+	console.log(currentHour);
+	console.log(selectedHour);
+	if(currentHour > selectedHour){ ///Put in function
+			
+		console.log(currentHour) ;
+		
+		
+		$(this).addClass( "past" );
+		
+	}
+
+})
 	//create current time.
-	 var dateTime = moment().format('MMMM Do YYYY, h:mm a');
-	        //var dateTime = moment().hours();
+	// var dateTime = moment().format('MMMM Do YYYY, h:mm a');
+	       // var dateTime = moment().hours();
 	        //console.log(dateTime);
-	$("#currentDay").append(dateTime);
+	//$("#currentDay").append(dateTime);
 
     //Logging text from savebtn, to console, then saving to local storage.
 
@@ -28,7 +47,7 @@ $(document).ready(function (){
 		// console.log($(this));
 		var inputText = $(this).siblings(".description").val(); //grabbing value from input
 		console.log(inputText);
-		var currentHour = $(this).parent().attr("id"); //grabbing parent attribute
+		var currentHour = $(this).parent().data("hour"); //grabbing parent attribute
 		console.log(currentHour);
 
 		localStorage.setItem(currentHour, inputText);
@@ -37,28 +56,11 @@ $(document).ready(function (){
 		///how  =to create it????
 		console.log("currentHour: ", currentHour);
 		console.log("dateTime: ", dateTime);
-		var newDateTime = moment().format('h');
-		console.log("newDateTime: ", newDateTime);
+	
+		//description.each // //
 
 		
-		if(currentHour < newDateTime){ ///Put in function
-			var currentHour = Str.replace('hour-','');
-			console.log(currentHour) ;
-			
-			$(this).addClass( "past" );
-			$("inputText").append(currentHour);
-
-			// $( "" ).eq( 1 ).removeClass();
-			
-			console.log(currentHour);
-			console.log()
-			//stringof
-			//textlock    
-		//String.replace('somevalue','') Need to turn into a number?
-		//If currentHour < Newdatetime
-			//orr function {if var past= <currentTime change css to css class .past.
-
-		}
+		
 		
 
 
