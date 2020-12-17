@@ -29,10 +29,11 @@ $(document).ready(function (){
 		console.log(currentHour) ;
 		$(this).addClass( "past" );
 		
+		if(currentHour < selectedHour){
+			$(this).addclass("future");
+		}
 	}
-	if(currentHour < selectedHour){
-		$(this).addclass("future")
-	}
+	
 })
 	//create current time.
 	// var dateTime = moment().format('MMMM Do YYYY, h:mm a');
@@ -54,7 +55,7 @@ $(document).ready(function (){
 
 		///how  =to create it????
 		console.log("currentHour: ", currentHour);
-		console.log("dateTime: ", dateTime);
+		//console.log("dateTime: ", dateTime);
 	
 		//description.each // //
 
