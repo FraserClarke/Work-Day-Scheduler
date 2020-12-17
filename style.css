@@ -36,17 +36,16 @@ textarea{
   height: 80px;
   border-top: 1px solid white;;
 }
-.saveBtn{
-  background-color: red;
-}
+
+
 .hour {
-  background-color: #ffffff;
+  background-color: #fcb470;
   color: #000000;
-  border-top: 1px dashed #000000;
+  /*border-top: 1px dashed #000000;*/
 }
 
 .past {
-  background-color: blue;
+  background-color: rgb(162, 162, 247);
   color: white;
 } 
 
@@ -64,7 +63,7 @@ textarea{
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06AED5;
+  background-color:rgb(247, 221, 73);
   color: white;
 }
 
