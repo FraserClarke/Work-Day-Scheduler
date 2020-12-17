@@ -38,7 +38,10 @@ $(document).ready(function (){
 
 })
 	//create current time.
-	// var dateTime = moment().format('MMMM Do YYYY, h:mm a');
+	 var dateTime = moment().format('MMMM Do YYYY, h:mm a');
+	 // console.log(dateTime)
+	 $("#currentTime").html(dateTime);
+	 // console.log("curent Time element", $("#currentTime"));
 	       // var dateTime = moment().hours();
 	        //console.log(dateTime);
 	//$("#currentDay").append(dateTime);
@@ -46,11 +49,15 @@ $(document).ready(function (){
     //Logging text from savebtn, to console, then saving to local storage.
 
 	$(".saveBtn").on("click", function(){
+
+		//if to check if the element has a past class name
+		// alert box to say "cant add events to past"
+		// else
 		// console.log($(this));
 		var inputText = $(this).siblings(".description").val(); //grabbing value from input
 		console.log(inputText);
-		var currentHour = $(this).parent().data("hour"); //grabbing parent attribute///changed to .data
-		console.log(currentHour);
+		var currentHour = $(this).siblings(".description").attr("data-hour") //grabbing parent attribute///changed to .data
+
 
 		localStorage.setItem(currentHour, inputText);
 
@@ -60,10 +67,6 @@ $(document).ready(function (){
 		//console.log("dateTime: ", dateTime);
 	
 		//description.each // //
-
-		
-		
-		
 
 
 		/*var past= currentHour < dateTime;
@@ -79,9 +82,15 @@ $(document).ready(function (){
 
 	});
 
-	
-	
-	
+
+
+
+$("#hour-11 .description").val(localStorage.getItem("11"));
+$("#hour-12 .description").val(localStorage.getItem("12"));
+
+
+	// to clear
+// $(".description").val("")	
 	
 	
 	// var storage
