@@ -17,10 +17,12 @@ THEN the saved events persist
 
 $(document).ready(function (){
 	//var dateTime = moment().format('MMMM Do YYYY, h:mm a');
-				 var currentHour = moment().hours();
+			
+	// moment.js variable for hours
+		var currentHour = moment().hours();
  				//console.log(dateTime);
-	//$("#currentDay").append(dateTime);
-
+	
+	// Creating function for applying css classes to past, present, future determined by time.
 	$(".description").each(function() {
 	var selectedHour = $(this).data("hour");
 	console.log(currentHour);
@@ -37,15 +39,11 @@ $(document).ready(function (){
 	}
 
 })
-	//create current time.
+	//create current time. Display
 	 var dateTime = moment().format('MMMM Do YYYY, h:mm a');
 	 // console.log(dateTime)
 	 $("#currentTime").html(dateTime);
-	 // console.log("curent Time element", $("#currentTime"));
-	       // var dateTime = moment().hours();
-	        //console.log(dateTime);
-	//$("#currentDay").append(dateTime);
-
+	 
     //Logging text from savebtn, to console, then saving to local storage.
 
 	$(".saveBtn").on("click", function(){
@@ -58,97 +56,21 @@ $(document).ready(function (){
 		console.log(inputText);
 		var currentHour = $(this).siblings(".description").attr("data-hour") //grabbing parent attribute///changed to .data
 
-
-		localStorage.setItem(currentHour, inputText);
-
-
-		///how  =to create it????
-		console.log("currentHour: ", currentHour);
-		//console.log("dateTime: ", dateTime);
-	
-		//description.each // //
-
-
-		/*var past= currentHour < dateTime;
-		var present=currentHour === dateTime;
-		var future=currentHour>dateTime;
-
-		if past < dateTime{
-			$("#id").cssHooks(".past");
-		}
-		*/
-
-
-
+		localStorage.setItem(currentHour, inputText);		
+		console.log("currentHour: ", currentHour);	
 	});
 
-
-
-
+		//Getting value from local storage and displaying it in description
+$("#hour-9 .description").val(localStorage.getItem("9"));
+$("#hour-10 .description").val(localStorage.getItem("10"));
 $("#hour-11 .description").val(localStorage.getItem("11"));
 $("#hour-12 .description").val(localStorage.getItem("12"));
+$("#hour-13 .description").val(localStorage.getItem("13"));
+$("#hour-14 .description").val(localStorage.getItem("14"));
+$("#hour-15 .description").val(localStorage.getItem("15"));	
+$("#hour-16 .description").val(localStorage.getItem("16"));
+$("#hour-17 .description").val(localStorage.getItem("17"));
 
 
-	// to clear
-// $(".description").val("")	
-	
-	
-	// var storage
-	// $("textarea").on("click", function(event){
-	    
-	//     
-	//     console.log();
-	// });
-
-
-	/*$("textarea").on("click", function(event){
-	event.append(console.log);
-	})
-	console.log();
-	/*
-
-	// Finish up and make a completed HTML timeblock
-
-	// i.e
-	//    <div id="hour-9" class="row time-block">
-	//        <div class="col-md-1 hour">
-	//          9AM
-	//        </div>
-	//        <textarea class="col-md-10 description"></textarea>
-	//        <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
-	//    </div>
-
-	// Use javascript to make what is written in the <textarea> appear in the console when the button is clicked
-
-	// Use javascript to make what is written in the <textarea> appear in the local storage
-
-	// Use javascript to pull what is in the local storage and insert it into the corresponding time block
-
-	// Use javascript to color time blocks according to local time
-
-
-	/*var past = < dateTime;
-	var present = dateTime;
-	var future = >datTime;
-
-	for (past) function {
-	    if past 
-	}
-	/*
-
-	//variables past present future
-
-
-	/*if hours9 >dateTime
-	block text , change color
-	}
-
-	//color coded blocks past present future.... if datetime <.....or if datetime true/false
-
-	//cannot acess block if past a certain time
-
-	//when clicking time block onclick envent lister
-
-	//save to local storage*/
 
 });
