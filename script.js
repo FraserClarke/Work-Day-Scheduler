@@ -49,7 +49,7 @@ $(document).ready(function (){
 		// console.log($(this));
 		var inputText = $(this).siblings(".description").val(); //grabbing value from input
 		console.log(inputText);
-		var currentHour = $(this).parent().data("hour"); //grabbing parent attribute
+		var currentHour = $(this).parent().data("hour"); //grabbing parent attribute///changed to .data
 		console.log(currentHour);
 
 		localStorage.setItem(currentHour, inputText);
